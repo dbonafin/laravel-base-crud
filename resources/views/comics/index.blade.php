@@ -8,19 +8,24 @@
 
     <h1>Bestsellers</h1>
 
-    @foreach ($comics as $comic)
-        <div>
-            <h2>Title: {{$comic->title}}</h2>
+   <div class="comics-container">
+        @foreach ($comics as $comic)
+            <div class="comic-card">
+                <div class="comic-text">
+                    <h2>Title: {{$comic->title}}</h2>
 
-            <div>Price: {{$comic->price}}&dollar;</div>
-            <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
-                More details
-            </a>
+                    <div>Price: {{$comic->price}}&dollar;</div>
+                    <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
+                        More details
+                    </a>
 
-            <div>
-                <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+                </div>
+
+                <div class="comic-img">
+                    <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+                </div>
             </div>
-        </div>
-    @endforeach
+        @endforeach
+   </div>
     
 @endsection
