@@ -1,6 +1,12 @@
 @extends('layout.app')
 
+@section('title')
+    Comics
+@endsection
+
 @section('main-content')
+
+    <h1>Bestsellers</h1>
 
     @foreach ($comics as $comic)
         <div>

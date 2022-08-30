@@ -1,5 +1,9 @@
 @extends('layout.app')
 
+@section('title')
+    {{$comic->title}}
+@endsection
+
 @section('main-content')
    
     <h2>Title: {{$comic->title}}</h2>
