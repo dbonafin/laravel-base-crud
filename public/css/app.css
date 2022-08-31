@@ -41,7 +41,7 @@ h1 {
 }
 
 div {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .comics-container {
@@ -130,12 +130,16 @@ form div {
 }
 
 form div input {
-  padding: 5px 80px;
+  width: 250px;
+  padding: 5px;
 }
 
 .create-comic {
-  padding: 5px;
-  display: block;
+  align-self: center;
   margin: 0 auto;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 

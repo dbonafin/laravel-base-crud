@@ -58,7 +58,14 @@
             <input type="text" id="thumb" name="thumb">
         </div>
 
+        <div>
+            <div>
+                <label for="sale_date">Sale date</label>
+            </div>
+            <input type="date" id="sale_date" name="sale_date">
+        </div>
+
+        <input type="submit" value="Create" class="create-comic">
     </form>
 
-    <input type="submit" value="Create" class="create-comic">
 @endsection

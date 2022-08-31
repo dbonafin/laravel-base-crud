@@ -1,3 +1,4 @@
+// Create form
 form {
     padding: 10px;
     background-color: lightcoral;
@@ -13,13 +14,17 @@ form {
         align-items: center;
         justify-content: flex-start;
         input {
-            padding: 5px 80px;
+            width: 250px;
+            padding: 5px;
         }
     }
 }
-
+// Create button
 .create-comic {
-    padding: 5px;
-    display: block;
+    align-self: center;
     margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
 }

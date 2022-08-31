@@ -21,6 +21,7 @@ class CreateComicsTable extends Migration
             $table->decimal('price', 6, 2)->unsigned();
             $table->text('description');
             $table->text('thumb');
+            $table->string('sale_date', 20);
             $table->timestamps();
         });
     }

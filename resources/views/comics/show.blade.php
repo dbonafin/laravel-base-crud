@@ -32,6 +32,10 @@
             <div>
                 Series: {{$comic->series}}
             </div>
+
+            <div>
+                Sale date: {{$comic->sale_date}}
+            </div>
         </div>
 
         {{-- Right part of the comic book card --}}
