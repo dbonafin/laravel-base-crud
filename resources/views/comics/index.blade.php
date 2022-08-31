@@ -20,8 +20,13 @@
                     <h2>Title: {{$comic->title}}</h2>
 
                     <div>Price: {{$comic->price}}&dollar;</div>
+
                     <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
                         More details
+                    </a>
+
+                    <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
+                        Edit
                     </a>
                 </div>
 

@@ -41,6 +41,8 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        // Check the validations for the form
+        $request->validate($this->getValidations());
         // Get all the infos from the form
         $form_data = $request->all();
         // Create a new comic
@@ -77,7 +79,7 @@ class ComicController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('comics.edit');
     }
 
     /**
@@ -101,5 +103,17 @@ class ComicController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getValidations() {
+        return [
+            'title' => 'required | max: 50',
+            'type' => 'required | max: 20',
+            'series' => 'required | max: 50',
+            'price' => 'required | max: 999.99',
+            'description' => 'required | max: 20000',
+            'thumb' => 'required | max: 20000',
+            'sale_date' => 'required'
+        ];
     }
 }
