@@ -1,7 +1,8 @@
 // Create form
 form {
     padding: 10px;
-    background-color: lightcoral;
+    border: 2px solid $secondary_color;
+    background-color: $primary_color;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@ form {
         align-items: center;
         justify-content: flex-start;
         input {
-            width: 250px;
+            width: 274px;
             padding: 5px;
         }
     }

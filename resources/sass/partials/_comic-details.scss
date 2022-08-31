@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 2px solid lightcoral;
+    border: 2px solid $secondary_color;
+    background-color: $primary_color;
 }
 
 .card-text {

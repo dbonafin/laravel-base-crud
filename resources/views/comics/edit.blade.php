@@ -9,6 +9,16 @@
 @section('main-content')
     <h1>Edit the comic book by yourself</h3>
 
+    @if ($errors->any())
+        <div class="validation-error">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="post">
         @csrf
         @method('PUT')
@@ -80,8 +90,8 @@
                 id="description" 
                 cols="40" 
                 rows="5"
-                value="{{ old('description') ? old('description') : $comic->description }}"
-            ></textarea>
+            >{{ old('description') ? old('description') : $comic->description }}
+            </textarea>
         </div>
 
         {{-- Image url input details --}}
@@ -114,4 +124,5 @@
 
         <input type="submit" value="Create" class="create-comic">
     </form>
+
 @endsection

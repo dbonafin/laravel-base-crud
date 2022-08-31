@@ -48,7 +48,7 @@
             <div>
                 <label for="description">Description</label>
             </div>
-            <textarea name="description" id="description" cols="40" rows="5"></textarea>
+            <textarea name="description" id="description" cols="30" rows="5"></textarea>
         </div>
 
         <div>

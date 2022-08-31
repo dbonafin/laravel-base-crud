@@ -36,6 +36,10 @@
             <div>
                 Sale date: {{$comic->sale_date}}
             </div>
+
+            <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
+                Edit
+            </a>
         </div>
 
         {{-- Right part of the comic book card --}}

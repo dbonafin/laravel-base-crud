@@ -34,14 +34,28 @@ h1 {
   text-align: center;
 }
 
+div {
+  margin: 10px 0;
+}
+
+form {
+  border: 1px solid black;
+}
+
 .intro-text h1,
 .intro-text h2 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-div {
-  margin: 10px 0;
+.validation-error {
+  margin-left: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.description-form textarea {
+  padding: 8px;
 }
 
 .comics-container {
@@ -54,7 +68,8 @@ div {
   display: flex;
   margin: 20px;
   width: calc(33.3333333333% - 40px);
-  border: 2px solid lightcoral;
+  background-color: rgba(116, 138, 220, 0.4705882353);
+  border: 2px solid #748adc;
 }
 
 .comics-container .comic-card .comic-text {
@@ -91,7 +106,8 @@ div {
   display: flex;
   align-items: center;
   padding: 10px;
-  border: 2px solid lightcoral;
+  border: 2px solid #748adc;
+  background-color: rgba(116, 138, 220, 0.4705882353);
 }
 
 .card-text {
@@ -117,7 +133,8 @@ div {
 
 form {
   padding: 10px;
-  background-color: lightcoral;
+  border: 2px solid #748adc;
+  background-color: rgba(116, 138, 220, 0.4705882353);
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -134,7 +151,7 @@ form div {
 }
 
 form div input {
-  width: 250px;
+  width: 274px;
   padding: 5px;
 }
 

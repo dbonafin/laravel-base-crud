@@ -6,7 +6,8 @@
         display: flex;
         margin: 20px;
         width: calc(100% / 3 - 40px);
-        border: 2px solid lightcoral;
+        background-color: $primary_color;
+        border: 2px solid $secondary_color;
         .comic-text {
             width: 60%;
             padding: 10px;
