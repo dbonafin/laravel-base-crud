@@ -15,5 +15,9 @@
             You can check our bestsellers <br>
             Or create your own comic book!
         </h2>
+
+        <section class="home-bg">
+            <img src="https://pbs.twimg.com/media/Dpfopk-XgAENPuM.jpg" alt="dc comics">
+        </section>
     </div>
 @endsection
