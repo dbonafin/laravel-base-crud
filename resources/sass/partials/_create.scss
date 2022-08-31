@@ -1,0 +1,25 @@
+form {
+    padding: 10px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    div {
+        font-size: 20px;
+        margin: 10px;
+        width: calc((100% / 2) - 20px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        input {
+            padding: 5px 80px;
+        }
+    }
+}
+
+.create-comic {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}

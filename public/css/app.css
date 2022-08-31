@@ -34,6 +34,12 @@ h1 {
   text-align: center;
 }
 
+.intro-text h1,
+.intro-text h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 div {
   margin: 20px 0;
 }
@@ -48,7 +54,7 @@ div {
   display: flex;
   margin: 20px;
   width: calc(33.3333333333% - 40px);
-  border: 1px solid violet;
+  border: 2px solid lightcoral;
 }
 
 .comics-container .comic-card .comic-text {
@@ -73,5 +79,63 @@ div {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.card-container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid lightcoral;
+}
+
+.card-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  margin: 0 auto;
+  width: 280px;
+  height: 400px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+form {
+  padding: 10px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+form div {
+  font-size: 20px;
+  margin: 10px;
+  width: calc(50% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form div input {
+  padding: 5px 80px;
+}
+
+.create-comic {
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
 }
 

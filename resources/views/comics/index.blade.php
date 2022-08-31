@@ -1,3 +1,5 @@
+{{-- ALL COMICS PAGE DETAILS --}}
+
 @extends('layout.app')
 
 @section('title')
@@ -9,8 +11,11 @@
     <h1>Bestsellers</h1>
 
    <div class="comics-container">
+
         @foreach ($comics as $comic)
             <div class="comic-card">
+
+                {{-- Left part of the comic book card --}}
                 <div class="comic-text">
                     <h2>Title: {{$comic->title}}</h2>
 
@@ -18,14 +23,16 @@
                     <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
                         More details
                     </a>
-
                 </div>
 
+                {{-- Right part of the comic book card --}}
                 <div class="comic-img">
                     <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
                 </div>
+
             </div>
         @endforeach
+
    </div>
     
 @endsection

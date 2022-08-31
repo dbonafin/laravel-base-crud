@@ -1,3 +1,5 @@
+{{-- CREATE A COMIC BOOK PAGE DETAILS --}}
+
 @extends('layout.app')
 
 @section('title')
@@ -9,46 +11,54 @@
         Here you can create a new comic book filling the next form
     </h1>
 
+    {{-- Create a comic book form --}}
     <form action="{{ route('comics.store') }}" method="post">
         @csrf
 
         <div>
-            <label for="title">Title</label>
+            <div>
+                <label for="title">Title</label>
+            </div>
             <input type="text" id="title" name="title">
         </div>
-        <br>
 
         <div>
-            <label for="price">Price</label>
+            <div>
+                <label for="price">Price</label>
+            </div>
             <input type="text" id="price" name="price">
         </div>
-        <br>
 
         <div>
-            <label for="type">Type</label>
+            <div>
+                <label for="type">Type</label>
+            </div>
             <input type="text" id="type" name="type">
         </div>
-        <br>
 
 
         <div>
-            <label for="series">Series</label>
+            <div>
+                <label for="series">Series</label>
+            </div>
             <input type="text" id="series" name="series">
         </div>
-        <br>
 
-        <div>
-            <label for="description">Description</label>
+        <div class="description-form">
+            <div>
+                <label for="description">Description</label>
+            </div>
             <textarea name="description" id="description" cols="40" rows="5"></textarea>
         </div>
-        <br>
 
         <div>
-            <label for="thumb">Url image</label>
+            <div>
+                <label for="thumb">Url image</label>
+            </div>
             <input type="text" id="thumb" name="thumb">
         </div>
-        <br>
 
-        <button>Submit</button>
     </form>
+
+    <input type="submit" value="Create" class="create-comic">
 @endsection
