@@ -58,6 +58,14 @@ form {
   padding: 8px;
 }
 
+.delete-form form {
+  cursor: pointer;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .comics-container {
   padding: 20px;
   display: flex;
@@ -98,6 +106,10 @@ form {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.comics-container .delete-form {
+  width: 50px;
 }
 
 .card-container {

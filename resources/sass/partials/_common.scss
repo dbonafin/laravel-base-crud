@@ -60,3 +60,13 @@ form {
         padding: 8px;
     }
 }
+
+.delete-form {
+    form {
+        cursor: pointer;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
