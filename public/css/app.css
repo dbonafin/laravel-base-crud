@@ -64,6 +64,10 @@ div {
   flex-direction: column;
 }
 
+.comics-container .comic-card .comic-text a {
+  margin: 5px 0;
+}
+
 .comics-container .comic-card .comic-img {
   width: 150px;
   height: 200px;
