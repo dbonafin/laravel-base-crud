@@ -37,9 +37,24 @@
                 Sale date: {{$comic->sale_date}}
             </div>
 
-            <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
-                Edit
-            </a>
+            <div class="edit-link">
+                <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
+                    Edit
+                </a>
+            </div>
+
+            <div class="delete-form">
+                <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+
+                    <input 
+                        type="submit" 
+                        value="Delete" 
+                        onClick="return confirm('Are you sure?');"
+                    >
+                </form>
+            </div>
         </div>
 
         {{-- Right part of the comic book card --}}

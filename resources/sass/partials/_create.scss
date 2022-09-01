@@ -1,5 +1,6 @@
 // Create form
 form {
+    color: white;
     padding: 10px;
     border: 2px solid $secondary_color;
     background-color: $primary_color;
@@ -14,14 +15,18 @@ form {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        input {
+        input, textarea {
+            border: 1px solid black;
+            border-radius: 5px;
             width: 274px;
             padding: 5px;
         }
     }
 }
+
 // Create button
 .create-comic {
+    cursor: pointer;
     align-self: center;
     margin: 0 auto;
     height: 30px;

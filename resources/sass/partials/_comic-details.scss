@@ -12,6 +12,21 @@
     width: 65%;
     display: flex;
     flex-direction: column;
+    // Edit button details
+    .edit-link {
+        font-size: 18px;
+        width: 74px;
+        cursor: pointer;
+        background-color: green;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align: center;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
 
 .card-image {

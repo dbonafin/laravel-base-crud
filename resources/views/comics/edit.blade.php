@@ -9,6 +9,7 @@
 @section('main-content')
     <h1>Edit the comic book by yourself</h3>
 
+    {{-- Validation error message --}}
     @if ($errors->any())
         <div class="validation-error">
             <ul>
@@ -79,7 +80,7 @@
             >
         </div>
 
-        {{-- Description input details --}}
+        {{-- Description textarea details --}}
         <div class="description-form">
             <div>
                 <label for="description">Description</label>
@@ -122,6 +123,7 @@
             >
         </div>
 
+        {{-- Create input button --}}
         <input type="submit" value="Create" class="create-comic">
     </form>
 

@@ -15,12 +15,7 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
-
-        $data = [
-            'comics' => $comics
-        ];
-
-        return view('comics.index', $data);
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -60,15 +55,17 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        $comic = Comic::findOrFail($id);
+        // $comic = Comic::findOrFail($id);
+        // $data = [
+        //     'comic' => $comic
+        // ];
 
-        $data = [
-            'comic' => $comic
-        ];
+        // Short version of this ^^ 
+        // And replacing ($id) like argument of the show function
 
-        return view('comics.show', $data);
+        return view('comics.show', compact('comic'));
     }
 
     /**
@@ -77,15 +74,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        $comic = Comic::findOrFail($id);
-
-        $data = [
-            'comic' => $comic
-        ];
-
-        return view('comics.edit', $data);
+        return view('comics.edit', compact('comic'));
     }
 
     /**

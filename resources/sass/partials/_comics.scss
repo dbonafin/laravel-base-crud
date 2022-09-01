@@ -4,6 +4,7 @@
     flex-wrap: wrap;    
     .comic-card {
         display: flex;
+        align-items: center;
         margin: 20px;
         width: calc(100% / 3 - 40px);
         background-color: $primary_color;
@@ -14,6 +15,8 @@
             display: flex;
             flex-direction: column;
             a {
+                color: white;
+                font-size: 18px;
                 margin: 5px 0;
             }
         }

@@ -62,9 +62,18 @@ form {
 
 // Create page 
 .validation-error {
-    margin-left: 30px;
+    width: 60%;
+    margin: 0 auto;
     font-size: 20px;
-    text-decoration: underline;
+    background-color: indianred;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    li {
+        margin-bottom: 4px;
+        list-style-type: none;
+    }
 }
 
 .description-form {
@@ -80,5 +89,16 @@ form {
         margin: 0;
         padding: 0;
         border: 0;
+        // Delete button details
+        input {
+            font-size: 18px;
+            cursor: pointer;
+            background-color: indianred;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
     }
+    
 }
